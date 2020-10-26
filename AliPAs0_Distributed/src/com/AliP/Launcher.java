@@ -8,7 +8,7 @@ public class Launcher {
             //to change modality press Run>edit configurations>program arguments : 0 or 1
             if (args.length != 1) {
                 System.out.println("Please specify modality ( 0 - single thread, 1 - multi thread )");
-            } if (args[0].equals("0") || args[0].equals("1")) {
+            } else if (args[0].equals("0") || args[0].equals("1")) {
                 Helper.execute(Integer.parseInt(args[0]));
             } else System.out.println("Incorrect mode selected!");
         }
